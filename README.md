@@ -70,11 +70,11 @@ Ett produktobjekt skickas eller returneras på följande sätt:
 
 ```json
 {
-  "namn": Love och Lovenina,
+  "namn": "Love och Lovenina",
   "länk": "https://bautawitch.se/2019/03/01/diy-stor-virkad-kramgo-nalle-och-kanin/",
   "status": "Påbörjad",
-  "verktyg": Virknål Hobbii 5 mm,
-  "garn": Sammetsgarn DMC Velvet,
+  "verktyg": "Virknål Hobbii 5 mm",
+  "garn": "Sammetsgarn DMC Velvet",
   "information": "Färger: Beige, grå och ljusrosa",
 }
 ```
