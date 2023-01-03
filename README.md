@@ -3,7 +3,7 @@ I detta respitory finns ett API byggt i Node.js med hjälp av ramverket Express 
 
 ## Collections
 
-| Namn på collection| Nycklar |
+| Namn på samling| Nycklar |
 | ----------- | ----------- |
 | projects | **_id** (ObjectId), **name** (String), **link** (String), **status** (String), **tool** (String), **yarn** (String)|
 | tools | **_id** (ObjectId), **category** (String), **brand** (String), **size** (String)|
