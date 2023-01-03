@@ -66,7 +66,7 @@ I detta respitory finns ett API byggt i Node.js med hjälp av ramverket Express 
 | PUT | /projects/{id} | Uppdaterar existerande projekt med angivet ID, ett projektobjekt måste skickas med. |
 | DELETE | /projects/{id} | Raderar projekt med angivet ID. |
 
-Ett produktobjekt skickas eller returneras på följande sätt:
+Ett projektobjekt skickas eller returneras på följande sätt:
 
 ```json
 {
@@ -87,7 +87,7 @@ Ett produktobjekt skickas eller returneras på följande sätt:
 | PUT | /tools/{id} | Uppdaterar existerande verktyg med angivet ID, ett verktygsobjekt måste skickas med. |
 | DELETE | /tools/{id} | Raderar verktyg med angivet ID. |
 
-Ett kategoriobjekt skickas eller returneras på följande sätt:
+Ett verktygsobjekt skickas eller returneras på följande sätt:
 
 ```json
 {
@@ -106,7 +106,7 @@ Ett kategoriobjekt skickas eller returneras på följande sätt:
 | PUT | /yarns/{id} | Uppdaterar existerande garn med angivet ID, ett garnobjekt måste skickas med. |
 | DELETE | /yarns/{id} | Raderar garn med angivet ID. |
 
-Ett märkesobjekt skickas eller returneras på följande sätt:
+Ett garnobjekt skickas eller returneras på följande sätt:
 
 ```json
 {
