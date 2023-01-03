@@ -1,13 +1,13 @@
 # Projekt i JavaScriptbaserad webbutveckling (DT162G)
-I detta respitory finns ett API byggt i Node.js med hjälp av ramverket Express som skapats för projektarbetet i kursen JavaScriptbaserad webbutveckling på Mittuniversitetet. API:et kan användas för att hantera projekt för handarbeten. Det finns funktionalitet för CRUD, det vill säga skapa, läsa, uppdatera och radera, för projekt, verktyg och garn.
+I detta respitory finns ett API byggt i Node.js med hjälp av ramverket Express som skapats för projektarbetet i kursen JavaScriptbaserad webbutveckling på Mittuniversitetet. API:et kan användas för att hantera projekt för handarbeten. Det finns funktionalitet för CRUD, det vill säga skapa, läsa, uppdatera och radera, för projekt, verktyg och garn. API:et innehåller lokal koppling till databasen MongoDB genom verktyget Mongoose.
 
 ## Collections
 
 | Namn på collection| Nycklar |
 | ----------- | ----------- |
-| products | **_id** (bigint(20)), **article** (int(11)), **name** (varchar(255)), **description** (longText), **price** (int(11)), **price** (int(11)), **category_id** (bigint(20)) FK (categories), **brand_id** (bigint(20)) FK (brands), **created_at** (timestamp), **updated_at** (timestamp)|
-| categories | **_id** (bigint(20)), **name** (varchar(255)), **created_at** (timestamp), **updated_at** (timestamp)|
-| brands | **_id** (bigint(20)), **name** (varchar(255)), **created_at** (timestamp), **updated_at** (timestamp)|
+| projects | **_id** (ObjectId), **name** (String), **link** (String), **status** (String), **tool** (String), **yarn** (String)|
+| tools | **_id** (ObjectId), **category** (String), **brand** (String), **size** (String)|
+| yarns | **_id** (ObjectId), **category** (String), **brand** (String), **name** (String)|
 
 
 ## Scheman och routes med metoder
