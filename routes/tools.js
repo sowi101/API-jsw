@@ -73,7 +73,6 @@ router.post('/', function (req, res, next) {
   });
 });
 
-
 /* UPDATE tool by id */
 router.put('/:id', function (req, res, next) {
   // Save parameter value to a variable
@@ -95,14 +94,13 @@ router.put('/:id', function (req, res, next) {
   });
 });
 
-
 /* DELETE tool by id */
 router.delete('/:id', function (req, res, next) {
   // Save parameter value to a variable
   let id = req.params.id;
 
   // Function to delete a certain tool from database
-  Tool.deleteOne({ "_id": id }, function (err) {
+  Tool.findByIdAndDelete({ "_id": id }, function (err) {
     if (err) return console.error(err);
 
     // Send response to client application

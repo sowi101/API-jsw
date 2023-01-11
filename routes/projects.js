@@ -1,6 +1,6 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const router = express.Router();
+const mongoose = require('mongoose');
 
 // Connection to database
 mongoose.connect('mongodb://localhost:27017/handicraft', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -78,7 +78,6 @@ router.post('/', function (req, res, next) {
   });
 });
 
-
 /* UPDATE project by id */
 router.put('/:id', function (req, res, next) {
   // Save parameter value to a variable
@@ -103,14 +102,13 @@ router.put('/:id', function (req, res, next) {
   });
 });
 
-
 /* DELETE project by id */
 router.delete('/:id', function (req, res, next) {
   // Save parameter value to a variable
   let id = req.params.id;
 
   // Function to delete a certain project from database
-  Project.deleteOne({ "_id": id }, function (err) {
+  Project.findByIdAndDelete({ "_id": id }, function (err) {
     if (err) return console.error(err);
 
     // Send response to client application
