@@ -1,7 +1,7 @@
 # Projekt i JavaScriptbaserad webbutveckling (DT162G)
 I detta respitory finns ett API byggt i Node.js med hjälp av ramverket Express som skapats för projektarbetet i kursen JavaScriptbaserad webbutveckling på Mittuniversitetet. API:et kan användas för att hantera projekt för handarbeten. Det finns funktionalitet för CRUD, det vill säga skapa, läsa, uppdatera och radera, för projekt, verktyg och garn. API:et innehåller lokal koppling till databasen MongoDB genom verktyget Mongoose.
 
-## Collections
+## Samlingar i databasen (collections)
 
 | Namn på samling| Nycklar |
 | ----------- | ----------- |
