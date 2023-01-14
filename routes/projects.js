@@ -87,8 +87,8 @@ router.put('/:id', function (req, res, next) {
   let updatedProject = {
     name: req.body.name,
     link: req.body.link,
-    tools: req.body.tool,
-    yarns: req.body.yarn,
+    tool: req.body.tool,
+    yarn: req.body.yarn,
     information: req.body.information,
     status: req.body.status
   };
